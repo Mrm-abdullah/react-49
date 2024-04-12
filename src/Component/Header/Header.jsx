@@ -1,5 +1,7 @@
-import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
+const logOutbtn = () => {
+    console.log('jnsdfjkdfjkds');
+}
 
 const Header = () => {
     return (
@@ -24,7 +26,7 @@ const Header = () => {
                     </ul>
                 </div>
                 <div className="navbar-end">
-                    <a className="btn">Button</a>
+                    <Link onClick={logOutbtn} className="btn">Logout</Link>
                 </div>
             </div>
         </div>
